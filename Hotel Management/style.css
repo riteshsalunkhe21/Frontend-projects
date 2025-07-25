@@ -1,0 +1,118 @@
+body{
+    background-image: url(.vscode/bg.jpg);
+    background-size: cover;
+}
+.main-title
+{
+color: yellowgreen;
+font-family:Tahoma;
+font-size: 60px;
+font-style: italic;
+letter-spacing: 8px;
+text-shadow: white 5px 5px 5px;
+-webkit-text-stroke-color: red;
+-webkit-text-stroke-width: 2px;
+text-transform: uppercase;
+text-align: center;
+margin-bottom:1%;
+
+}
+.sub-title
+{
+    color:white;
+    font-family: Tahoma;
+    font-size: 30px;
+    letter-spacing: 10px;
+    font-style: italic;
+    text-shadow:blue 5px 5px 5px;
+    text-align: center;
+
+}
+.navbar
+{
+background-color: rgba(25, 27, 26, 0.7);
+padding: 10px;
+width: 40%;
+top: 10px;
+right: 10px;
+position: absolute;
+border-radius: 50px;
+text-align: center;
+
+}
+.navbar a{
+color:white;
+text-decoration: none;
+margin: 15px;
+text-transform: uppercase;
+}
+.navbar a:hover
+{
+    color: yellow;
+    border-bottom: solid 2px yellowgreen;
+    padding-bottom: 3px;
+}
+#animated
+{
+    margin-left: 35%;
+    width: 400px;
+    height: 400px;
+    animation: rotate alternate 2s linear 2s infinite; 
+}
+@keyframes rotate{
+    from{
+       transform: rotate(-40deg);
+    }
+    to{
+       transform: rotate(40deg);
+    }
+}
+.menu-container
+{
+    background-color: rgba(40, 173, 206, 0.8);
+    color: white;
+    width: 80%;
+    margin: auto auto;
+    padding: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 500px;
+}
+.menu-container h1{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    border-bottom: solid 5px red;
+    width: 60%;
+    margin: auto auto;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    
+}
+.menu-container .menu
+{
+    border: double 4px rgb(15, 14, 14);
+    width: 19%;
+    text-align: center;
+    padding: 17px;
+    overflow: hidden;
+    float:left;
+    margin-left: 20px;
+}
+.menu-container .menu img{
+ 
+    transition: 2s;
+  
+}
+.menu-container .menu img:hover{
+    transform: scale(1.5);
+    transition: 2s;
+  
+}
+.pay
+{
+    
+    background-image: url(.vscode/m.jpg);
+    text-align: center;
+
+}

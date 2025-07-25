@@ -1,0 +1,190 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dairy Business</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav bar starts here -->
+    <div class="nav">
+      <ul class="nav-ul">
+        <li>
+          <a href="" class="logo">Prisha<span class="Dar">Agro</span> </a>
+        </li>
+        <li>
+          <div class="nav-links">
+            <ul class="links">
+              <li><a class="nav-hover" href="#">Home</a></li>
+              <li><a class="nav-hover" href="#">About</a></li>
+              <li><a class="nav-hover" href="#">Products</a></li>
+              <li><a class="nav-hover" href="#">Contact us</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="nav-getstarted">
+            <ul class="login">
+              <li><a class="nav-hover" href="#">Login</a></li>
+              <li>
+                <a href="" class="btn"> Get Started </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- nav bar ends here -->
+
+    <div class="container">
+      <div class="landing">
+        <div class="landing-txt">
+          <h1 class="heading">Prisha milk and dairy products</h1>
+          <p class="mid-section">
+            At Prisha Agro, we're proud to share the simple pleasures of real dairy straight from our family farms.
+            Our products are organic and eco friendly.  
+          </p>
+          <a href="#report" class="btn-bottom">View report</a>
+        </div>
+      </div>
+      <div class="report" id="report">
+        <form
+          action=""
+          onsubmit="event.preventDefault(); generateReport()"
+          method=""
+        >
+          <h1>Sheds Production</h1>
+
+          <fieldset>
+            <legend>Enter the milk production values</legend>
+
+            <label for="a">Shed A:</label>
+            <input type="number" id="a" name="a" min="0" />
+
+            <label for="b">Shed B:</label>
+            <input type="number" id="b" name="b" min="0" />
+
+            <label for="c">Shed C:</label>
+            <input type="number" id="c" name="c" min="0" />
+
+            <label for="d">Shed D:</label>
+            <input type="number" id="d" name="d" min="0" />
+          </fieldset>
+          <fieldset>
+            <legend>Enter the milk price per liter</legend>
+            <label for="price">Brookside Purchase Price:</label>
+            <input type="number" id="price" name="price" min="0" />
+          </fieldset>
+
+          <button class="submit-btn" type="submit">GENERATE REPORT</button>
+        </form>
+        <div class="report-body">
+          <h1>Here is your report:</h1>
+          <p class="placeholder" id="placeholder">Your report values will appear here:</p>
+          <div id="report-values" class="report-values hidden">
+            <div class="daily-prod">
+              <p class="report-item">
+                Your production in shed A is
+                <span id="report-a"></span> litres per day
+              </p>
+              <p class="report-item">
+                Your production in shed B is
+                <span id="report-b"></span> litres per day
+              </p>
+              <p class="report-item">
+                Your production in shed C is
+                <span id="report-c"></span> litres per day
+              </p>
+              <p class="report-item">
+                Your production in shed D is
+                <span id="report-d"></span> litres per day
+              </p>
+            </div>
+            <div class="daily">
+              <p class="report-item">
+                Your daily income is
+                <span id="daily"> </span> kenyan shillings
+              </p>
+  
+            </div>
+            <div class="weekly">
+              <p class="report-item">
+                Your weekly income is
+                <span id="weekly"> </span> kenyan shillings
+              </p>
+  
+            </div>
+            <div class="monthly">
+              <p class="report-item">
+                Your income for January is
+                <span id="january"> </span> kenyan shillings
+              </p>
+              <p class="report-item">
+                Your income for february on a leap year is
+                <span id="feb-leap"> </span> kenyan shillings
+              </p>
+              <p class="report-item">
+                Your income for february on a non-leap year is
+                <span id="february"> </span> kenyan shillings
+              </p>
+              <p class="report-item">
+                Your income for march is
+                <span id="march"> </span> kenyan shillings
+              </p>
+              <p class="report-item">
+                Your income for April is
+                <span id="april"> </span> kenyan shillings
+              </p>
+              <p class="report-item">
+                Your income for may is
+                <span id="may"> </span> kenyan shillings
+              </p>
+              <p class="report-item">
+                Your income for june is
+                <span id="june"></span> kenyan shillings
+              </p>
+              <p class="report-item">
+                Your income for july is
+                <span id="july"></span> kenyan shillings
+              </p>
+              <p class="report-item">
+                Your income for august is
+                <span id="august"></span> kenyan shillings
+              </p>
+              <p class="report-item">
+                Your income for september is
+                <span id="september"></span> kenyan shillings
+              </p>
+              <p class="report-item">
+                Your income for october is
+                <span id="october"></span> kenyan shillings
+              </p>
+              <p class="report-item">
+                Your income for november is
+                <span id="november"></span> kenyan shillings
+              </p>
+              <p class="report-item">
+                Your income for december is
+                <span id="december"></span> kenyan shillings
+              </p>
+  
+            </div>
+            <div class="yearly">
+              <p class="report-item">
+                Your income on a leap year is
+                <span id="leap-year"></span> kenyan shillings
+              </p>
+              <p class="report-item">
+                Your income on a non-leap year is
+                <span id="non-leap-year"></span> kenyan shillings
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
